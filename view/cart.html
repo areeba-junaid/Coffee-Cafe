@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/cart.css">
+    <title>Cofee Shop</title>
+</head>
+
+<body class="container">
+    <!--Header-->
+    <header class="header">
+        <a href="#home"><img class=" logo" src="/images/logo.png" alt=""></a>
+
+        <nav class="nav-item">
+            <a href="/home">Home</a>
+            <a class="hb" href="#" onclick="Ordering()">Order</a>
+            <a class="hb" onclick="loggingOut()" href="/login">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart-form">
+            <div class="title">
+                <h1>Cart</h1>
+                 <img class="del" onclick="Clear()"src="/images/remove.png" alt="not found">     
+            </div>
+            <ul class="list" >Empty</ul>
+            <h2 class="total">Total: 0</h2> 
+        </section>
+
+        <section id="order-form">
+            <div class="title">
+                <h1>Order</h1>
+            </div>
+            <ul class="list" >Empty</ul>
+            <h2 class="total">Bill: 0</h2> 
+        </section>
+       
+    </main>
+
+    <footer id="contact">
+        <p>Cofee Heaven</p>
+        <p>All rights reserved &copy;</p>
+        <div class="s-button">
+            <a href="mailto: arbajunaid0@gmail.com""> <img src=" /images/letter-g.png" alt=""> </a>
+            <a href="https://www.facebook.com/coffeekaffeeofficial/" target="_blank"><img src="/images/facebook.png"
+                    alt=""></a>
+            <a href="https://twitter.com/TheCoffeeBean?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"> <img src="/images/twitter.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+<script src="/logic/cart.js"></script>
+
+</html>

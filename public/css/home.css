@@ -1,0 +1,280 @@
+
+:root {
+   --main-color: #be9c79;
+   --light-color: #666;
+   --border: .2rem solid var(--black);
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+*{
+      font-family: 'Nunito', sans-serif;
+      margin:0; 
+      padding:0;
+      box-sizing: border-box;
+      outline: none;
+      border:none;
+      text-decoration: none;
+     
+}
+
+
+/*Container code*/
+.container {
+  display:flex;
+  flex-direction: column;
+
+  
+}
+
+/*header*/
+header {
+   background: #fff;
+   position: sticky;
+   top: 0;
+   height:70px;
+   min-height: 50px;
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+   align-items: center;
+   box-shadow: var(--box-shadow);
+   z-index: 10;
+}
+
+.logo {
+   height: 40px;
+   width: 50px;
+   margin:5px;
+}
+
+.nav-item {
+   text-decoration: none;
+   display: flex;
+   gap: 40px;
+  
+}
+.nav-item a{
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+}
+.nav-item a:hover{
+   text-decoration: underline;
+   color:rgb(109, 103, 103);
+}
+
+.hb{
+   border:rgb(206, 143, 72);
+   background-color:rgb(206,143,72) ;
+   padding: 10px;
+}
+
+/*Banner */
+main{
+   grid-area: main;
+   height:450px;
+   background: url(../images/cofee-banner.jpg);
+   background:linear-gradient(60deg, rgb(190, 168, 119), transparent 30%), url(./images/cofee-banner.jpg) no-repeat;
+   background-size:cover;
+   background-position: center;
+   font-size: 2rem;
+   color:rgb(240, 240, 236);
+     
+}
+main >h1{
+   font-family: 'Merienda One', cursive;
+   margin: 5px
+}
+
+/*About Us */
+.about-us{ 
+   padding: 50px;
+   width: 100%;
+   background-image: linear-gradient(to right,rgba(235, 205, 166, 0.459), rgb(240, 222, 199));
+  
+}
+.about-us > h1{
+ font-size: 2rem;
+ font-family: 'Merienda One', cursive;
+}
+.about-container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   
+}
+.about-container > img 
+{
+   width: 20%;
+   height: 30%;
+}
+.about-us >p
+{
+   color: #666;
+   font-size: 1 rem;
+   padding: 5px;
+   text-align: justify;
+   
+}
+
+.speciality,.menu{
+ 
+  width: 100%;
+  display:flex;
+  padding: 40px;
+  background-image: linear-gradient(to right,rgba(235, 205, 166, 0.459), rgb(240, 222, 199));
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.heading{
+   width: 70%;
+   text-align: center;
+   
+}
+.heading>h3{
+   font-family: 'Merienda One', cursive;
+   font-size: 2rem;
+}
+
+.heading>img{
+   width:70%;
+  
+}
+.box-container{
+   border: solid black;
+   margin-top: 20px;;
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+    
+   
+}
+.box-container-m{
+   border: solid black;
+   max-width:80%;
+   overflow: hidden;
+   padding: 30px;
+   margin:3rem;
+   width: 80%;
+   min-width:20%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   row-gap: 40px;
+   border-radius: 10px;;
+}
+.box{
+text-align: center;
+min-width:20%;;
+overflow:hidden;
+width: 25%;
+
+}
+.box-m{
+   width:40%;
+   min-width: 20%;
+   display: flex;
+   flex-direction: column;
+   justify-content: baseline;
+   overflow:hidden;
+   padding: 15px;
+   border:solid 1px black;
+   text-align: center;
+   
+}
+.box-m>img:hover{
+   transform: scale(1.1);
+   transition:0.5s;
+}
+.location
+{
+ 
+   background-image: linear-gradient(to right,rgba(235, 205, 166, 0.459), rgb(240, 222, 199));
+   width: 100%;
+   height:500px;
+   padding: 30px;
+   display:flex;
+   min-width:30%;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 30px;;
+  
+}
+
+.location>.heading{
+   width:70%;
+   
+}
+
+.location>iframe{
+   
+   width:50%;
+   height:80%;
+   
+}
+.location>iframe:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+   border: rgb(207, 152, 56) 1px solid;
+}
+
+footer{
+   width: 100%;
+   height:50px;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   min-height: 50px;
+   background-color: rgb(255, 255, 255);
+   color: rgb(14, 13, 13);
+   justify-content: space-between;
+   
+}
+.s-button{
+   display:flex;  
+   flex-direction: row;
+}
+.s-button> a>img{
+   margin: 5px;
+}
+.s-button >a:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+}
+
+.quantity{
+   display:flex;
+   flex-direction: row;
+   justify-content:baseline;
+   justify-content: center;
+}
+
+
+.quantity>input{
+   width: 40px;
+   background-color: white;
+   color:black;
+   text-align: center;
+   margin:3px;
+}
+.minus:hover,.plus:hover{
+   transform: scale(1.1);
+}
+.cart{
+   background-color: rgb(206, 143, 72);
+   color: white;
+   padding:15px;
+   font-weight: bold;
+   font-size: 1em;
+   margin: 10px;
+}
+
+.cart:hover{
+   background-color: #666;
+   transform: scale(1.1);
+   transition: 0.7s;
+}

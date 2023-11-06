@@ -1,0 +1,161 @@
+*:root {
+    --main-color: #be9c79;
+    --light-color: #666;
+ }
+ 
+ html,
+ body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: rgb(240, 222, 199);
+ }
+ 
+ .container {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ header {
+    height: 10%;
+    width: 100%;
+    
+    background: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px rgb(228, 209, 183);
+ }
+ 
+ .logo {
+    height: 40px;
+    width: 50px;
+    margin: 5px;
+ }
+ 
+ 
+ .nav-item {
+    text-decoration: none;
+    display: flex;
+    gap: 40px;
+ 
+ }
+ 
+ .nav-item a {
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+ }
+ 
+ .nav-item a:hover {
+    text-decoration: underline;
+    color: rgb(109, 103, 103);
+ }
+ 
+ .hb {
+    border: rgb(206, 143, 72);
+    background-color: rgb(206, 143, 72);
+    padding: 10px;
+ }
+ 
+ main {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ 
+ }
+ 
+ #cart-form,
+ #order-form {
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+    font-family: 'Merienda One', cursive;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .title{
+    height: 10%;
+    display:flex;
+    flex-direction:  row;
+    align-items: center;
+    justify-content:center;
+    column-gap: 10px;
+    background-color: #fff9f2;
+ }
+ .del:hover
+ {  transform:scale(1.1);
+    transition: 0.5s;
+ }
+ 
+ .list {
+    list-style: none;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+ 
+ }
+ 
+ .list-items {
+    border: solid black 1px;
+    width:90%;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+ }
+ #total{
+    align-self: flex-end;
+ 
+ }
+ footer {
+ 
+    width: 100%;
+    margin: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 13, 13);
+    justify-content: space-between;
+ }
+ 
+ .s-button {
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ .s-button>a>img {
+    margin: 5px;
+ }
+ 
+ .s-button>a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+ }
+ 
+ 
+ 

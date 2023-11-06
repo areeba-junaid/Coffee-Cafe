@@ -1,0 +1,89 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right,rgba(196, 113, 4, 0.918), rgb(240, 222, 199));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  height: 80%;
+  width: 30%;
+  padding:60px;
+  background-color: #FDFDFF;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  row-gap: 15px;
+}
+
+.item {
+  display: flex;
+}
+.logo{
+  display:flex;
+  flex-direction:row;
+  height:100px;
+}
+.logo>img{
+  height: 60px;
+  width: 60px;
+ 
+}
+
+.logo>h1{
+  font-family: 'Merienda One', cursive;
+}
+.register {
+
+  align-self: flex-start;
+  padding-left: 10px;
+  color: black;
+  font-family: 'Merienda One', cursive;
+}
+
+
+
+.info {
+
+  border-width: 0px;
+  border: none;
+  padding: 5px;
+}
+
+.inputs-field {
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgb(173, 163, 163);
+  height: 40px;
+  width: 100%;
+  align-items: center;
+}
+
+.btn>input {
+  width: 200px;
+  background-color: #226ccc;
+  color: white;
+  font-style: bold;
+  padding: 10px;
+  border: solid #226ccc 1px;
+}
+
+.grey {
+  color: #83818D;
+  font-weight: 1px;
+}
+
+.blue {
+  color: #226ccc;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <link rel="stylesheet" href="/css/feedback.css">
+</head>
+
+<body>
+    <div class="container">
+         <form action="/feedback" onsubmit="sendEmail(); reset(); return false;" method="POST">
+           <h3>GIVE YOUR FEEDBACK</h3>
+           <input type="text" id="name" placeholder="Your Name" required >
+           <input type="email" id="email" placeholder="Email id" required >
+           <input type="text" id="phone" placeholder="Phone no" required>
+           <textarea id="message" rows="4" placeholder="How was your experience?"></textarea>
+            <button type="submit">Submit Feedback</button>
+         </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "syedafatimazahid2002@gmail.com",
+                Password : "qwerTy123@456",
+                To : 'syedafatimazahid123@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Feedback from coffee shop website",
+                Body : "Name: " + document.getElementById("name").value
+                     + "<br> Email: " + document.getElementById("email").value
+                     + "<br> Phone no: " + document.getElementById("phone").value
+                     + "<br> Message: " + document.getElementById("message").value
+            }).then( 
+              message => alert("Feedback sent successfully")
+            );
+        }
+    </script>
+</body>
+</html>
